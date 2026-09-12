@@ -437,3 +437,25 @@ footer {
         text-align: center;
     }
 }
+/* Scroll animations */
+
+.service-card,
+.project-card,
+.about-text,
+.stat,
+.contact-form {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.service-card.visible,
+.project-card.visible,
+.about-text.visible,
+.stat.visible,
+.contact-form.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
